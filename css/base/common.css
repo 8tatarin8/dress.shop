@@ -1,0 +1,166 @@
+/*
+|=========================================|
+|=====|ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
+|=========================================|
+*/
+/* ?-mobile: 360 px разрешение/(340px) контейнер */
+/* ?-mobile: 480 px разрешение/(460px) контейнер */
+/* ?-tablet: 768 px разрешение/(640px) контейнер */
+/* ?-tablet: 1000 px разрешение/(960 px) контейнер */
+/* ?-desktop: */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+/* прибираю маркери з усіх UL(списків) маркери */
+ul {
+  list-style-type: none;
+}
+/* прибираю нижнє підкреслювання з всіх посилань */
+a {
+  text-decoration: none;
+  /* наслідування кольору */
+  color: inherit;
+}
+/* для всіх кнопок */
+/* завжди окремо для всіх кнопок прописувати типографію */
+button {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/*
+|=====================================|
+|------|ДЕФОЛТНІ СКИДАННЯ/RESET|------|
+|=====================================|
+*/
+/*скинув маркери*/
+.list {
+  list-style: none;
+}
+/* скинув підкреслення */
+.link {
+  text-decoration: none;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+/*
+|=====================================|
+|------|OFF/ДЕФОЛТНІ СКИДАННЯ/RESET|------|
+|=====================================|
+*/
+
+/* продивитись ці стилі */
+body {
+  font-family: "", sans-serif;
+  background-color: ;
+}
+/* колір фону секції */
+
+.container {
+  max-width: 375px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+/* section {
+  padding: 40px 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+
+  section {
+    padding: 75px 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+} */
+
+/*
+|------------COLORS/FONTS/OTHER----------|
+|----прописати зрозумілі значення для кольрів:----|
+|- CL - колір для тексту;-------------------------------|
+|- H - колір для заголовків;----------------------------|
+|- P - колір для абзаців;----------------------------|
+|- BG - колір для фону;----------------------------------|
+*/
+:root {
+  /* colors */
+
+  --accent-color: ;
+
+  /*fonts*/
+  --primary-font: "", sans-serif;
+  --secondary-font: "", sans-serif;
+}
+
+/*стилі для приховаих заголовків*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ?=========за необхідністю:hover/focus======== */
+/* ?============================================ */
+
+/*
+|=============================================|
+|=====|OFF/ЗАГАЛЬНІ СТИЛІ/COMMON STYLES|======|
+|=============================================|
+*/
