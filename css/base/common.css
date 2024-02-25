@@ -88,42 +88,14 @@ body {
   font-family: "", sans-serif;
   background-color: ;
 }
+body {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+address {
+  font-size: normal;
+}
 /* колір фону секції */
-
-.container {
-  max-width: 375px;
-  padding: 0px 20px;
-  margin: 0 auto;
-}
-
-/* section {
-  padding: 40px 0px;
-}
-
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0px 32px;
-  }
-
-  section {
-    padding: 75px 0px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0px 50px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-} */
 
 /*
 |------------COLORS/FONTS/OTHER----------|
@@ -135,10 +107,18 @@ body {
 */
 :root {
   /* colors */
+  --primary-color: rgba(252, 249, 249, 0.4);
+  --secondary-color: #fcf9f9;
+  --accent-color: #ecd979;
+  --input-color: rgba(252, 249, 249, 0.5);
+  --border-color: rgba(252, 249, 249, 0.1);
+  --background-color: #1c2225;
 
-  --accent-color: ;
+  background-color: var(--background-color);
 
   /*fonts*/
+  font-family: "Manrope", sans-serif;
+
   --primary-font: "", sans-serif;
   --secondary-font: "", sans-serif;
 }

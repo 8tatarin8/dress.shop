@@ -3,8 +3,8 @@
 @import "./section/footer.css";
 @import "./section/hero.css";
 @import "./utils/modal-windows.css";
-@import "";
-@import "";
+@import "./base/container.css";
+@import "./section/about.css";
 @import "";
 @import "";
 @import "";

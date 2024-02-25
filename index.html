@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Second.shop</title>
     <!-- підключив шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- підключив modern normalize -->
     <link
       rel="stylesheet"
@@ -15,9 +21,235 @@
   </head>
   <body>
     <!-- SECTION HEADER -->
-    <header class="basic-header"></header>
-    <!-- MAIN -->
-    <main class="basic-header"></main>
+    <header class="header-basic">
+      <div class="header-container">
+        <a href="#" class="header-logo">
+          <img src="./images/svg/logo.svg" alt="logo" width="44" height="39" />
+        </a>
+        <nav class="header-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-item header-list">
+              <a href="#about" class="header-menu-link">About us</a>
+            </li>
+            <li class="header-menu-item header-list">
+              <a href="#collection" class="header-menu-link">Our collection</a>
+            </li>
+            <li class="header-menu-item header-list">
+              <a href="#order" class="header-menu-link">CUSTOMER ORDER</a>
+            </li>
+            <li class="header-menu-item header-list">
+              <a href="#testimonials" class="header-menu-link">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="header-tel">
+          <a href="tel:+380684439426" class="header-tel-link"
+            >+380 (68) 443-94-26</a
+          >
+        </address>
+        <ul class="header-social-list">
+          <li class="header-social-item header-list">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="header-social-link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="link to facebook"
+            >
+              <svg class="header-icon" width="28" height="28">
+                <!-- <use href="img/header-icons.svg#icon-facebook"></use> -->
+                <use href="/images/svg/sprite-icon.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item header-list">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="header-social-link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="link to instagram"
+            >
+              <svg class="header-icon" width="28" height="28">
+                <!-- <use href="img/header-icons.svg#icon-instagram"></use> -->
+                <use href="/images/svg/sprite-icon.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item header-list">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="header-social-link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              aria-label="link to youtube"
+            >
+              <svg class="header-icon" width="28" height="28">
+                <use href="/images/svg/sprite-icon.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="header-menu-burger" type="button" data-mobile-open>
+          <svg
+            class="header-burger-icon"
+            width="44"
+            height="30"
+            aria-label="mobile menu open icon"
+          >
+            <use href="/images/svg/sprite-icon.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- ====================== MOBILE MENU ====================== -->
+      <!-- <div class="header-mobile-slider header-is-hidden" data-mobile>
+        <div class="header-mobile-content">
+          <div class="header-mobile-tel">
+            <a href="tel:+380684439426" class="header-mobile-tel-link"
+              >+380 (68) 443-94-26</a
+            >
+          </div>
+          <button
+            type="button"
+            class="header-mobile-close-btn"
+            data-mobile-close
+          >
+            <svg
+              class="header-mobile-close-icon"
+              width="36"
+              height="36"
+              aria-label="mobile menu close icon"
+            >
+            
+              <use href="./img/svg/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header-mobile-menu">
+          <ul class="header-mobile-list">
+            <li class="header-mobile-item header-list">
+              <a href="#about" class="header-mobile-link">About us</a>
+            </li>
+            <li class="header-mobile-item header-list">
+              <a href="#collection" class="header-mobile-link"
+                >Our collection</a
+              >
+            </li>
+            <li class="header-mobile-item header-list">
+              <a href="#order" class="header-mobile-link">CUSTOMER ORDER</a>
+            </li>
+            <li class="header-mobile-item header-list">
+              <a href="#testimonials" class="header-mobile-link"
+                >TEstimonials</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header-mobile-background"></div>
+      </div> -->
+    </header>
+    <!-- SECTION MAIN -->
+    <main class="basic-header">
+      <!-- SECTION HERO -->
+      <section class="hero-section">
+        <div class="hero-section-container container">
+          <div class="hero-align-container">
+            <img
+              class="hero-model-img"
+              srcset="
+                ./images/mobile/section-hero/mob-hero1x.jpg                 392w,
+                ./images/mobile/section-hero/mob-hero@2x.jpg                784w,
+                ./images/tablet/section-hero/tab-hero-girl1x.jpg.           413w,
+                ./images/tablet/section-hero/tab-hero-girl@2x.jpg           826w,
+                ./images/desktop_1280/section-hero/des1280-hero-girl1x.jpg  335w,
+                ./images/desktop_1280/section-hero/des1280-hero-girl@2x.jpg 670w
+              "
+              sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
+              src="./images/desktop_1280/section-hero/des1280-hero-girl1x.jpg"
+              alt="Model in embrjidered shirt"
+            />
+            <div class="hero-title-container">
+              <h1 class="hero-title">
+                Reviving the traditional
+                <span class="hero-text-accent">Ukrainian</span> artistry in
+                every stitch.
+              </h1>
+
+              <a class="hero-link link" href="#order"
+                >order
+                <svg class="hero-btn-arrow" width="27" height="22">
+                  <use href="./img/svg/icons.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-star-embr">
+            <div class="hero-star-container">
+              <img
+                class="hero-star"
+                srcset="./images/decoration/star@2x.png 2x"
+                src="./images/decoration/star.png"
+                width="52"
+                height="51"
+                alt="A little Ukrainian star"
+              />
+              <p class="hero-hand-made-text">all embroidery is made by hand</p>
+            </div>
+            <div class="hero-embr">
+              <img
+                class="hero-ua-img"
+                srcset="./images/decoration/emb@2x.jpg 2x"
+                src="./images/decoration/emb1x.jpg"
+                alt="Lovely Ukraine on shirt"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION ABOUT US -->
+      <section class="section-about-us" id="about">
+        <div class="container box-about-us">
+          <div class="about-us-text-wrapper">
+            <h2 class="title-about-us">About Us</h2>
+
+            <p class="text-about-us">
+              The store "Vyshyvanka Vibes" is a place where traditional
+              Ukrainian vyshyvanka comes to life with new zest and style. Our
+              store offers a wide selection of high-quality and authentic
+              embroidery, which combines the elegance of traditional needlework
+              and modern design.
+            </p>
+            <p class="text-about-us">
+              In "Vyshyvanka Vibes" you will find various models of embroidery,
+              from classic to modern, corresponding to the latest fashion
+              trends. Our embroidery is made using natural fabrics and is
+              embroidered by highly qualified craftsmen who convey the beauty of
+              Ukrainian culture in every detail.We believe that vyshyvanka is
+              not just clothing, but a symbol of national pride, the heritage of
+              our ancestors and a way of expressing one's individuality. Each
+              embroidery from "Vyshyvanka Vibes" has its own unique history and
+              symbolism, which gives it a special meaning.
+            </p>
+          </div>
+
+          <img
+            class="image-about-us"
+            srcset="
+              ./images/desktop_1280/section-about-us/about-us-des1280.jpg     594w,
+              ./images/desktop_1280/section-about-us/about-us-des1280@2x.jpg 1188w,
+              ./images/tablet/section-about-us/about-us-tab1x.jpg             704w,
+              ./images/tablet/section-about-us/about-us-tab@2x.jpg           1408w,
+              ./images/mobile/section-about-us/about-us-mob1x.jpg             335w,
+              ./images/mobile/section-about-us/about-us-mob@2x.jpg            670w
+            "
+            sizes="(min-width: 1280px) 594px, (min-width: 768px) 704px, (max-width: 767px) 335px"
+            src="../dress.shop/images/mobile/section-hero/mob-hero1x.jpg"
+            alt="image-embroidered-shirt"
+          />
+        </div>
+      </section>
+    </main>
     <!-- SECTION FOOTER -->
     <footer class="basic-footer"></footer>
     <!-- JS -->
